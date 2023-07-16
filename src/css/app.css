@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+
+:root {
+    --primary-dark: hsl(263, 85%, 18%);
+}
+
+@tailwind utilities;

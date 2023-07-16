@@ -8,7 +8,7 @@ See [the documentation](documentation/index.md) for the instructions and focus.
 
 1. [x] Fork to GitHub
 2. [x] Get working in VSCode
-3. [ ] Integrate Tailwind via vue cli
+3. [x] Integrate Tailwind via vue cli
 4. [ ] Start creating a single template just to display the output as expected
 5. [ ] Break apart components
     1. [ ] Header
