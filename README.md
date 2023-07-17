@@ -9,8 +9,9 @@ See [the documentation](documentation/index.md) for the instructions and focus.
 1. [x] Fork to GitHub
 2. [x] Get working in VSCode
 3. [x] Integrate Tailwind via vue cli
-4. [ ] Start creating a single template just to display the output as expected
-5. [ ] Break apart components
+4. [x] Add font and custom colors
+5. [ ] Start creating a single template just to display the output as expected
+6. [ ] Break apart components
     1. [ ] Header
         1. [ ] Profile Picture
             1. [ ] If Picture, Display
@@ -31,14 +32,14 @@ See [the documentation](documentation/index.md) for the instructions and focus.
         2. [ ] Table Row
             1. [ ] GPA
     3. [ ] Footer
-6. [ ] Responsive
+7. [ ] Responsive
     1. [ ] Logo
     2. [ ] Report Name
     3. [ ] Report Header as horizontal display / single column
     4. [ ] Table as horizontal display / single column
         1. [ ] School Name: Name (Sticky)
     5. [ ] Table header sticky on the desktop?
-7. [ ] Testing
+8. [ ] Testing
     1. [ ] Static data is displayed for each field
     2. [ ] Profile picture includes an image link to the picture if present
     3. [ ] Profile picture chooses random color if not present
