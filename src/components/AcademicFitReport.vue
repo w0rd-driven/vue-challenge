@@ -33,6 +33,8 @@
 </template>
 
 <script>
+import ReportLogo from "@/assets/report-logo.png"
+
 export default {
   name: "AcademicFitReport",
   props: {
@@ -40,6 +42,11 @@ export default {
       type: Object,
       required: false
     }
-  }
+  },
+  data() {
+    return {
+      ReportLogo,
+    };
+  },
 };
 </script>
