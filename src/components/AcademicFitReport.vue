@@ -69,7 +69,13 @@
         </tr>
       </thead>
       <tbody>
-        <TableRow v-for="(school, index) in athlete.report" :key="school.name" :index="index" :school="school" :athlete_gpa="athlete.gpa"></TableRow>
+        <TableRow
+          v-for="(school, index) in athlete.report"
+          :key="school.name"
+          :index="index"
+          :school="school"
+          :athlete_gpa="athlete.gpa"
+          class="even:bg-table-even"></TableRow>
       </tbody>
     </table>
     <footer class="text-sm mx-12 my-4">
