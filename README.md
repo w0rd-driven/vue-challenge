@@ -10,28 +10,30 @@ See [the documentation](documentation/index.md) for the instructions and focus.
 2. [x] Get working in VSCode
 3. [x] Integrate Tailwind via vue cli
 4. [x] Add font and custom colors
-5. [ ] Start creating a single template just to display the output as expected
+5. [x] Start creating a single template just to display the output as expected
 6. [ ] Break apart components
-    1. [ ] Header
-        1. [ ] Profile Picture
-            1. [ ] If Picture, Display
-            2. [ ] If NULL
-                1. [ ] Initials in white text on a random background
-                2. [ ] The color of the avatar should be chosen by the last name’s first character and selected from the palette
-                3. [ ] 6 colors, 26 possible letters. Have an array like A - F, etc
-                    1. [ ] ABCDE - #f1603c
-                    2. [ ] FGHIJ - #6082fa
-                    3. [ ] KLMN - #827cb8
-                    4. [ ] OPQR - #0097a4
-                    5. [ ] STUV - #ffe066
-                    6. [ ] WXYZ - #ffa94d
-        2. [ ] Name
-            1. [ ] Editing First Last changes the profile picture
-    2. [ ] Table
+    1. [ ] Avatar Picture
+        1. [ ] If Picture, Display
+        2. [ ] If NULL
+            1. [ ] Initials in white text on a random background
+            2. [ ] The color of the avatar should be chosen by the last name’s first character and selected from the palette
+            3. [ ] 6 colors, 26 possible letters. Have an array like A - F, etc
+                1. [ ] ABCDE - #f1603c
+                2. [ ] FGHIJ - #6082fa
+                3. [ ] KLMN - #827cb8
+                4. [ ] OPQR - #0097a4
+                5. [ ] STUV - #ffe066
+                6. [ ] WXYZ - #ffa94d
+    2. [ ] Name
+        1. [ ] Editing First Last changes the avatar picture
+    3. [ ] Table
         1. [ ] Table Header
         2. [ ] Table Row
-            1. [ ] GPA
-    3. [ ] Footer
+            1. [ ] Even row colors
+            2. [ ] GPA
+                1. [ ] Evenly apply spacing
+                2. [ ] Normalize GPA
+                3. [ ] Apply color to 50% section
 7. [ ] Responsive
     1. [ ] Logo
     2. [ ] Report Name
