@@ -69,16 +69,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(school, index) in athlete.report" :key="index" class="text-center text-xs">
-          <td class="text-left py-1">{{ school.school }}</td>
-          <td>{{ school.division }}</td>
-          <td class="text-left">{{ school.conference }}</td>
-          <td>{{ school.ranking }}</td>
-          <td class="text-left">{{ school.gpa.min }} {{ school.gpa['25%'] }} {{ school.gpa['50%'] }} {{ school.gpa['75%'] }} {{ school.gpa.max }}</td>
-          <td>{{ school.sat.reading.min }}-{{ school.sat.reading.max }}</td>
-          <td>{{ school.sat.math.min }}-{{ school.sat.math.max }}</td>
-          <td>{{ school.act.min }}-{{ school.act.max }}</td>
-        </tr>
+        <TableRow v-for="(school, index) in athlete.report" :key="school.name" :index="index" :school="school" :athlete_gpa="athlete.gpa"></TableRow>
       </tbody>
     </table>
     <footer class="text-sm mx-12 my-4">
@@ -92,9 +83,13 @@
 
 <script>
 import ReportLogo from "@/assets/report-logo.png"
+import TableRow from "@/components/TableRow.vue"
 
 export default {
   name: "AcademicFitReport",
+  components: {
+    TableRow,
+  },
   props: {
     athlete: {
       type: Object,
