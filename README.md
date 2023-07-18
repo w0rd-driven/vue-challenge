@@ -26,15 +26,15 @@ See [the documentation](documentation/index.md) for the instructions and focus.
                 6. [ ] WXYZ - #ffa94d
     2. [ ] Name
         1. [ ] Editing First Last changes the avatar picture
-    3. [ ] Table
-        1. [ ] Table Header
-        2. [x] Table Row
+    3. [x] Table
+        1. [x] Table Row
             1. [x] Even row colors
             2. [x] Format N/A responses
             3. [x] GPA
-                1. [ ] Evenly apply spacing
-                2. [ ] Normalize GPA to 2 decimal places
-                3. [ ] Apply color to 50% section
+                1. [x] Evenly apply spacing to match report
+                2. [x] Normalize GPA to 2 decimal places
+                3. [x] Apply color to 50% section
+                4. [ ] Fix height issue with table cell
 7. [ ] Responsive
     1. [ ] Logo
     2. [ ] Report Name

@@ -1,6 +1,10 @@
 <template>
-    <td class="text-left">
-        {{ school_gpa.min }} {{ school_gpa['25%'] }} {{ school_gpa['50%'] }} {{ school_gpa['75%'] }} {{ school_gpa.max }}
+    <td class="flex justify-between items-center">
+        <div>{{ formatNumber(school_gpa.min) }}</div>
+        <div>{{ formatNumber(school_gpa['25%']) }}</div>
+        <div :class="backgroundColor">{{ formatNumber(school_gpa['50%']) }}</div>
+        <div>{{ formatNumber(school_gpa['75%']) }}</div>
+        <div>{{ formatNumber(school_gpa.max) }}</div>
     </td>
 </template>
 
@@ -14,6 +18,25 @@ export default {
         school_gpa: {
             type: Object,
         },
-    }
+    },
+    computed: {
+        backgroundColor: function () {
+            if (this.school_gpa['50%'] > this.athlete_gpa) {
+                return Math.abs(this.school_gpa['50%'] - this.athlete_gpa) > 0.10 ? "bg-gpa-above-more" : "bg-gpa-above-less"
+            }
+            if (this.school_gpa['50%'] === this.athlete_gpa) {
+                return "bg-gpa-equal"
+            }
+            if (this.school_gpa['50%'] < this.athlete_gpa) {
+                return Math.abs(this.school_gpa['50%'] - this.athlete_gpa) > 0.10 ? "bg-gpa-below-more" : "bg-gpa-below-less"
+            }
+            return ""
+        }
+    },
+    methods: {
+        formatNumber: function (number) {
+            return number.toFixed(2)
+        }
+    },
 };
 </script>
