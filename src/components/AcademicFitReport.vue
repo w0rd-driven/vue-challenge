@@ -2,9 +2,11 @@
   <div>
     <hr class="h-2 border-0 bg-rule">
     <header class="info flex mt-12">
-      <Avatar :imageUrl="athlete.profile_image" :athleteName="athlete.name"></Avatar>
+      <Avatar :imageUrl="athlete.profile_image" :athleteName="athleteName"></Avatar>
       <div class="flex-1 ml-4">
-        <h2 class="text-2xl font-bold text-rule align-text-top">{{ athlete.name }}</h2>
+        <h2 v-show="editing == false" @dblclick="editing = true" class="text-2xl font-bold text-rule align-text-top">{{ athleteName }}</h2>
+        <input v-show="editing" v-model="athleteName" v-on:blur="editComplete" @keyup.enter="editComplete"
+          class="text-2xl font-bold text-rule align-text-top bg-transparent">
         <ul class="grid grid-rows-3 grid-flow-col gap-x-20 auto-cols-max">
           <li>
             <label class="font-bold">Sport:</label>
@@ -106,7 +108,14 @@ export default {
   },
   data() {
     return {
-      ReportLogo,
+      ReportLogo: ReportLogo,
+      athleteName: this.athlete.name,
+      editing: false,
+    }
+  },
+  methods: {
+    editComplete: function () {
+      this.editing = false
     }
   },
 };

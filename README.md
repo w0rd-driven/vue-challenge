@@ -11,7 +11,7 @@ See [the documentation](documentation/index.md) for the instructions and focus.
 3. [x] Integrate Tailwind via vue cli
 4. [x] Add font and custom colors
 5. [x] Start creating a single template just to display the output as expected
-6. [ ] Break apart components
+6. [x] Break apart components
     1. [x] Avatar Picture
         1. [x] If Picture, Display
         2. [x] If NULL
@@ -24,8 +24,8 @@ See [the documentation](documentation/index.md) for the instructions and focus.
                 4. [x] OPQR - #0097a4
                 5. [x] STUV - #ffe066
                 6. [x] WXYZ - #ffa94d
-    2. [ ] Name
-        1. [ ] Editing First Last changes the avatar picture
+    2. [x] Name
+        1. [x] Editing First Last changes the avatar picture
     3. [x] Table
         1. [x] Table Row
             1. [x] Even row colors
