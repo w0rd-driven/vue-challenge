@@ -1,5 +1,5 @@
 <template>
-    <td class="flex justify-between items-center">
+    <td class="grid grid-cols-5 py-2 gap-0">
         <div>{{ formatNumber(school_gpa.min) }}</div>
         <div>{{ formatNumber(school_gpa['25%']) }}</div>
         <div :class="backgroundColor">{{ formatNumber(school_gpa['50%']) }}</div>

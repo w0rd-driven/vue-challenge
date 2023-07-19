@@ -1,6 +1,6 @@
 <template>
     <tr class="text-center text-xs">
-        <td class="text-left py-1">{{ school.school }}</td>
+        <td class="text-left py-2">{{ school.school }}</td>
         <td>{{ school.division }}</td>
         <td class="text-left">{{ school.conference }}</td>
         <td>{{ school.ranking }}</td>

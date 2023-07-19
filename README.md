@@ -34,7 +34,8 @@ See [the documentation](documentation/index.md) for the instructions and focus.
                 1. [x] Evenly apply spacing to match report
                 2. [x] Normalize GPA to 2 decimal places
                 3. [x] Apply color to 50% section
-                4. [ ] Fix height issue with table cell
+                4. [ ] Fix background to full height in table cell
+                5. [x] Fix vertical alignment in table cell
 7. [ ] Responsive
     1. [ ] Logo
     2. [ ] Report Name
