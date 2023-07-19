@@ -1,7 +1,7 @@
 <template>
   <div>
-    <img v-if="imageUrl" :src="imageUrl" class="h-24 w-24 rounded-full ml-12 mt-1 flex-0" />
-    <div v-else class="h-24 w-24 rounded-full ml-12 mt-1 flex-0 flex items-center text-3xl text-white" :class="backgroundColor">
+    <img v-if="imageUrl" :src="imageUrl" class="rounded-full" />
+    <div v-else class="rounded-full flex items-center text-3xl text-white" :class="backgroundColor">
       <span class="mx-auto">{{ initials }}</span>
     </div>
   </div>

@@ -36,13 +36,14 @@ See [the documentation](documentation/index.md) for the instructions and focus.
                 3. [x] Apply color to 50% section
                 4. [ ] Fix background to full height in table cell
                 5. [x] Fix vertical alignment in table cell
-7. [ ] Responsive
-    1. [ ] Logo
-    2. [ ] Report Name
-    3. [ ] Report Header as horizontal display / single column
+7. [x] Responsive
+    1. [x] Logo
+    2. [x] Report Name
+    3. [x] Report Header as horizontal display / single column
     4. [ ] Table as horizontal display / single column
         1. [ ] School Name: Name (Sticky)
-    5. [ ] Table header sticky on the desktop?
+    5. [ ] Extra: Table header sticky on the desktop
+    6. [x] Footer
 8. [ ] Testing
     1. [ ] Static data is displayed for each field
     2. [ ] Profile picture includes an image link to the picture if present
