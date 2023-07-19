@@ -2,7 +2,7 @@
   <div>
     <hr class="h-2 border-0 bg-rule">
     <header class="info flex mt-12">
-      <img :src="athlete.profile_image" class="h-24 rounded-full ml-12 mt-1 flex-0" />
+      <Avatar :imageUrl="athlete.profile_image" :athleteName="athlete.name"></Avatar>
       <div class="flex-1 ml-4">
         <h2 class="text-2xl font-bold text-rule align-text-top">{{ athlete.name }}</h2>
         <ul class="grid grid-rows-3 grid-flow-col gap-x-20 auto-cols-max">
@@ -89,11 +89,13 @@
 
 <script>
 import ReportLogo from "@/assets/report-logo.png"
+import Avatar from "@/components/Avatar.vue"
 import TableRow from "@/components/TableRow.vue"
 
 export default {
   name: "AcademicFitReport",
   components: {
+    Avatar,
     TableRow,
   },
   props: {
@@ -105,7 +107,7 @@ export default {
   data() {
     return {
       ReportLogo,
-    };
+    }
   },
 };
 </script>
