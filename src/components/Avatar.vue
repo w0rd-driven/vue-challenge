@@ -1,10 +1,11 @@
 <template>
   <div>
-    <img v-if="imageUrl" :src="imageUrl" class="rounded-full" />
+    <img v-if="imageUrl" :src="imageUrl" class="rounded-full" data-testid="avatarPicture" />
     <div
       v-else
       class="rounded-full flex items-center text-3xl text-white"
       :class="backgroundColor"
+      data-testid="avatarBackground"
     >
       <span class="mx-auto">{{ initials }}</span>
     </div>

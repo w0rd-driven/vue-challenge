@@ -46,11 +46,11 @@ See [the documentation](documentation/index.md) for the instructions and focus.
 8. [x] Testing
     1. [x] Avatar
         1. [x] Initials are displayed
-        2. [ ] Picture includes link if present
-        3. [ ] Background color is chosen as expected if link is not present
+        2. [x] Picture includes link if present
+        3. [x] Background color is chosen based on specifications if link is not present
     2. [x] GPA
         1. [x] Displays full student GPA to 2 decimal places
-        2. [ ] Background color is chosen
+        2. [ ] Background color is chosen based on specifications
     3. [x] TableRow
         1. [x] Displays school information
         2. [x] N/A-N/A returns "Not Reported"
