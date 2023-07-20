@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <AcademicFitReport :athlete="athlete_info"/>
+    <AcademicFitReport :athlete="athlete_info" />
   </div>
 </template>
 
@@ -11,12 +11,12 @@ import AthleteData from "@/assets/data.json";
 export default {
   name: "app",
   components: {
-    AcademicFitReport
+    AcademicFitReport,
   },
-  data: function() {
+  data: function () {
     return {
-      athlete_info: AthleteData.data[0]
+      athlete_info: AthleteData.data[0],
     };
-  }
+  },
 };
 </script>

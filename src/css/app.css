@@ -1,27 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 
 :root {
-    --color-rule: #00b4ff;
-    --color-avatar-1: #f1603c;
-    --color-avatar-2: #6082fa;
-    --color-avatar-3: #827cb8;
-    --color-avatar-4: #0097a4;
-    --color-avatar-5: #ffe066;
-    --color-avatar-6: #ffa94d;
-    --color-gpa-above-more: #d7737d;
-    --color-gpa-above-less: #c194b5;
-    --color-gpa-equal: #b4a7d6;
-    --color-gpa-below-less: #a6a8da;
-    --color-gpa-below-more: #75ace5;
-    --color-table-header: #222222;
-    --color-table-even: #e8f0fe;
+  --color-rule: #00b4ff;
+  --color-avatar-1: #f1603c;
+  --color-avatar-2: #6082fa;
+  --color-avatar-3: #827cb8;
+  --color-avatar-4: #0097a4;
+  --color-avatar-5: #ffe066;
+  --color-avatar-6: #ffa94d;
+  --color-gpa-above-more: #d7737d;
+  --color-gpa-above-less: #c194b5;
+  --color-gpa-equal: #b4a7d6;
+  --color-gpa-below-less: #a6a8da;
+  --color-gpa-below-more: #75ace5;
+  --color-table-header: #222222;
+  --color-table-even: #e8f0fe;
 }
 
 body {
-    @apply font-display;
+  @apply font-display;
 }
 
 @tailwind utilities;
