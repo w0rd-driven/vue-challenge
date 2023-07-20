@@ -1,6 +1,6 @@
 # Frontend Challenge - Academic Fit Report
 
-This is a frontend challenge in Vue.js to reproduce the academic fit report.
+This is a frontend challenge in Vue.js to reproduce the Academic Fit Report.
 
 See [the documentation](documentation/index.md) for the instructions and focus.
 
@@ -34,7 +34,7 @@ See [the documentation](documentation/index.md) for the instructions and focus.
                 1. [x] Evenly apply spacing to match report
                 2. [x] Normalize GPA to 2 decimal places
                 3. [x] Apply color to 50% section
-                4. [ ] Fix background to full height in table cell
+                4. [x] Fix background to full height in table cell (technically)
                 5. [x] Fix vertical alignment in table cell
 7. [x] Responsive
     1. [x] Logo
@@ -50,7 +50,7 @@ See [the documentation](documentation/index.md) for the instructions and focus.
         3. [x] Background color is chosen based on specifications if link is not present
     2. [x] GPA
         1. [x] Displays full student GPA to 2 decimal places
-        2. [ ] Background color is chosen based on specifications
+        2. [x] Background color is chosen based on specifications
     3. [x] TableRow
         1. [x] Displays school information
         2. [x] N/A-N/A returns "Not Reported"

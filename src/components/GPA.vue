@@ -15,7 +15,7 @@
     <div class="md:grid md:grid-cols-5 gap-0">
       <div>{{ formatNumber(schoolGpa.min) }}</div>
       <div>{{ formatNumber(schoolGpa["25%"]) }}</div>
-      <div :class="backgroundColor">{{ formatNumber(schoolGpa["50%"]) }}</div>
+      <div :class="backgroundColor" data-testid="gpaBackground">{{ formatNumber(schoolGpa["50%"]) }}</div>
       <div>{{ formatNumber(schoolGpa["75%"]) }}</div>
       <div>{{ formatNumber(schoolGpa.max) }}</div>
     </div>
