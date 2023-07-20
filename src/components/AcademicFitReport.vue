@@ -10,18 +10,22 @@
       <div class="md:flex-1 md:ml-4 mx-auto">
         <div class="text-center md:text-left">
           <h2
+            id="displayName"
             v-show="editing == false"
             @dblclick="editing = true"
             class="text-2xl font-bold text-rule align-text-top"
+            data-testid="displayName"
           >
             {{ athleteName }}
           </h2>
           <input
+            id="editName"
             v-show="editing"
             v-model="athleteName"
             v-on:blur="editComplete"
             @keyup.enter="editComplete"
             class="text-2xl font-bold text-rule align-text-top bg-transparent"
+            data-testid="editName"
           />
         </div>
         <ul
@@ -102,7 +106,7 @@
           :index="index"
           :school="school"
           :athleteGpa="athlete.gpa"
-          class="block md:text-xs my-2 mx-auto md:table-row even:bg-table-even"
+          class="block md:text-xs my-2 mx-auto md:table-row"
         ></TableRow>
       </tbody>
     </table>

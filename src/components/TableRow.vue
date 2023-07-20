@@ -1,16 +1,16 @@
 <template>
-  <tr>
+  <tr :class="backgroundColor">
     <td class="sticky top-0 flex gap-2 text-left md:table-cell">
       <div
-        class="inline-block w-1/3 md:hidden font-bold bg-table-header text-white"
+        class="inline-block w-1/3 flex-shrink-0 md:hidden font-bold bg-table-header text-white"
       >
         School Name
       </div>
-      <div>{{ school.school }}</div>
+      <div :class="backgroundColor">{{ school.school }}</div>
     </td>
     <td class="flex gap-2 text-left md:text-center md:table-cell">
       <div
-        class="inline-block w-1/3 md:hidden font-bold bg-table-header text-white"
+        class="inline-block w-1/3 flex-shrink-0 md:hidden font-bold bg-table-header text-white"
       >
         Athletic Div
       </div>
@@ -18,7 +18,7 @@
     </td>
     <td class="flex gap-2 text-left md:table-cell">
       <div
-        class="inline-block w-1/3 md:hidden font-bold bg-table-header text-white"
+        class="inline-block w-1/3 flex-shrink-0 min-w-max md:hidden font-bold bg-table-header text-white"
       >
         Conference
       </div>
@@ -28,7 +28,7 @@
       class="flex gap-2 items-center text-left md:text-center md:items-baseline md:table-cell"
     >
       <div
-        class="inline-block w-1/3 md:hidden font-bold bg-table-header text-white"
+        class="inline-block w-1/3 flex-shrink-0 md:hidden font-bold bg-table-header text-white"
       >
         Ranking*<br />
         <span class="font-normal">(DI NCAA)</span><br />
@@ -43,7 +43,7 @@
     ></GPA>
     <td class="flex gap-2 items-center text-left md:text-center md:table-cell">
       <div
-        class="inline-block w-1/3 md:hidden font-bold bg-table-header text-white"
+        class="inline-block w-1/3 flex-shrink-0 md:hidden font-bold bg-table-header text-white"
       >
         SAT Reading***<br />
         25%-75%
@@ -52,7 +52,7 @@
     </td>
     <td class="flex gap-2 items-center text-left md:text-center md:table-cell">
       <div
-        class="inline-block w-1/3 md:hidden font-bold bg-table-header text-white"
+        class="inline-block w-1/3 flex-shrink-0 md:hidden font-bold bg-table-header text-white"
       >
         SAT Math***<br />
         25%-75%
@@ -61,7 +61,7 @@
     </td>
     <td class="flex gap-2 items-center text-left md:text-center md:table-cell">
       <div
-        class="inline-block w-1/3 md:hidden font-bold bg-table-header text-white"
+        class="inline-block w-1/3 flex-shrink-0 md:hidden font-bold bg-table-header text-white"
       >
         ACT Composite***<br />
         25%-75%
@@ -88,6 +88,11 @@ export default {
     },
     school: {
       type: Object,
+    },
+  },
+  computed: {
+    backgroundColor: function () {
+      return this.index % 2 != 0 ? "bg-table-even" : "bg-white";
     },
   },
   methods: {

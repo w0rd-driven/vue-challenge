@@ -57,4 +57,6 @@ See [the documentation](documentation/index.md) for the instructions and focus.
         3. [x] Range is returned for SAT and ACT sections
     4. [x] AcademicFitReport
         1. [x] Displays athlete name
-        2. [ ] Athlete name can be edited
+        2. [x] Athlete name can be edited
+9. [ ] Integrate Pinia store
+    1. [ ] Test store
