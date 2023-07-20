@@ -1,10 +1,22 @@
 <template>
-    <td class="grid grid-cols-5 py-2 gap-0">
+    <td>
+      <div class="flex items-center justify-between w-1/3 md:hidden font-bold bg-table-header text-white">
+        <div>GPA**</div>
+        <div>
+          Min<br />
+          25%<br />
+          50%<br />
+          75%<br />
+          Max
+        </div>
+      </div>
+      <div class="md:grid md:grid-cols-5 gap-0">
         <div>{{ formatNumber(school_gpa.min) }}</div>
         <div>{{ formatNumber(school_gpa['25%']) }}</div>
         <div :class="backgroundColor">{{ formatNumber(school_gpa['50%']) }}</div>
         <div>{{ formatNumber(school_gpa['75%']) }}</div>
         <div>{{ formatNumber(school_gpa.max) }}</div>
+      </div>
     </td>
 </template>
 
@@ -40,3 +52,9 @@ export default {
     },
 };
 </script>
+
+<style>
+.grid {
+    background-position-x: center;
+}
+</style>

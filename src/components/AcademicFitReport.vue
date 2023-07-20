@@ -41,34 +41,38 @@
         <div class="text-lg md:text-right text-center">Academic Fit Report</div>
       </div>
     </header>
-    <table class="mt-16 mb-36 w-full">
-      <thead class="bg-table-header text-white text-xs">
-        <tr>
+    <table class="mt-16 mb-36 mx-auto md:w-full">
+      <thead class="bg-table-header text-white text-xs md:table-header-group">
+        <tr class="absolute -top-full -left-full md:relative md:top-auto md:left-auto md:table-row">
           <th>School Name</th>
           <th>Athletic Div</th>
           <th>Conference</th>
           <th>
-            Ranking*<br />
-            <span class="font-normal">
-              (DI NCAA)<br />
-              (DII & DIII Hero Sports)
-            </span>
-          </th>
-          <th class="align-bottom">
-            GPA**<br />
-            Min 25% 50% 75% Max
+            <div>Ranking*</div>
+            <div class="font-normal">(DI NCAA)</div>
+            <div class="font-normal">(DII & DIII Hero Sports)</div>
           </th>
           <th>
-            SAT Reading***<br />
-            25%-75%
+            <div>GPA**</div>
+            <div class="grid grid-cols-5 gap-0">
+              <div>Min</div>
+              <div>25%</div>
+              <div>50%</div>
+              <div>75%</div>
+              <div>Max</div>
+            </div>
           </th>
           <th>
-            SAT Math***<br />
-            25%-75%
+            <div>SAT Reading***</div>
+            <div>25%-75%</div>
           </th>
           <th>
-            ACT Composite***<br />
-            25%-75%
+            <div>SAT Math***</div>
+            <div>25%-75%</div>
+          </th>
+          <th>
+            <div>ACT Composite***</div>
+            <div>25%-75%</div>
           </th>
         </tr>
       </thead>
@@ -79,7 +83,7 @@
           :index="index"
           :school="school"
           :athlete_gpa="athlete.gpa"
-          class="even:bg-table-even"></TableRow>
+          class="block md:text-xs my-2 mx-auto md:table-row even:bg-table-even"></TableRow>
       </tbody>
     </table>
     <footer class="text-sm mx-auto md:mx-12 my-4 p-8 md:p-0 flex flex-col gap-1">

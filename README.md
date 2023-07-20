@@ -40,10 +40,9 @@ See [the documentation](documentation/index.md) for the instructions and focus.
     1. [x] Logo
     2. [x] Report Name
     3. [x] Report Header as horizontal display / single column
-    4. [ ] Table as horizontal display / single column
+    4. [x] Table as horizontal display / single column
         1. [ ] School Name: Name (Sticky)
-    5. [ ] Extra: Table header sticky on the desktop
-    6. [x] Footer
+    5. [x] Footer
 8. [ ] Testing
     1. [ ] Static data is displayed for each field
     2. [ ] Profile picture includes an image link to the picture if present
