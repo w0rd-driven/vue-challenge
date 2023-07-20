@@ -43,10 +43,18 @@ See [the documentation](documentation/index.md) for the instructions and focus.
     4. [x] Table as horizontal display / single column
         1. [x] School Name: Name (Sticky)
     5. [x] Footer
-8. [ ] Testing
-    1. [ ] Static data is displayed for each field
-    2. [ ] Profile picture includes an image link to the picture if present
-    3. [ ] Profile picture chooses random color if not present
-        1. [ ] Use A - Z or a sampling? Sample first, full list if time permits.
-        2. [ ] What if only a single name is given?
-    4. [ ] GPA color adheres to specifications
+8. [x] Testing
+    1. [x] Avatar
+        1. [x] Initials are displayed
+        2. [ ] Picture includes link if present
+        3. [ ] Background color is chosen as expected if link is not present
+    2. [x] GPA
+        1. [x] Displays full student GPA to 2 decimal places
+        2. [ ] Background color is chosen
+    3. [x] TableRow
+        1. [x] Displays school information
+        2. [x] N/A-N/A returns "Not Reported"
+        3. [x] Range is returned for SAT and ACT sections
+    4. [x] AcademicFitReport
+        1. [x] Displays athlete name
+        2. [ ] Athlete name can be edited
