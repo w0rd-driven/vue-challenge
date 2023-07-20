@@ -41,7 +41,7 @@ See [the documentation](documentation/index.md) for the instructions and focus.
     2. [x] Report Name
     3. [x] Report Header as horizontal display / single column
     4. [x] Table as horizontal display / single column
-        1. [ ] School Name: Name (Sticky)
+        1. [x] School Name: Name (Sticky)
     5. [x] Footer
 8. [ ] Testing
     1. [ ] Static data is displayed for each field

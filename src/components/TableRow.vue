@@ -1,6 +1,6 @@
 <template>
   <tr>
-    <td class="flex gap-2 text-left md:table-cell">
+    <td class="sticky top-0 flex gap-2 text-left md:table-cell">
       <div class="inline-block w-1/3 md:hidden font-bold bg-table-header text-white">School Name</div>
       <div>{{ school.school }}</div>
     </td>
