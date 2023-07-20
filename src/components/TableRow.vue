@@ -20,7 +20,7 @@
       </div>
       <div>{{ school.ranking }}</div>
     </td>
-    <GPA :athlete_gpa="athlete_gpa" :school_gpa="school.gpa" class="flex gap-2 items-center text-left md:text-center md:table-cell"></GPA>
+    <GPA :athleteGpa="athleteGpa" :schoolGpa="school.gpa" class="flex gap-2 items-center text-left md:text-center md:table-cell"></GPA>
     <td class="flex gap-2 items-center text-left md:text-center md:table-cell">
       <div class="inline-block w-1/3 md:hidden font-bold bg-table-header text-white">
         SAT Reading***<br />
@@ -57,7 +57,7 @@ export default {
         index: {
             type: Number,
         },
-        athlete_gpa: {
+        athleteGpa: {
             type: Number,
         },
         school: {

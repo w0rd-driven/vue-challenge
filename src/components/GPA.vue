@@ -11,11 +11,11 @@
         </div>
       </div>
       <div class="md:grid md:grid-cols-5 gap-0">
-        <div>{{ formatNumber(school_gpa.min) }}</div>
-        <div>{{ formatNumber(school_gpa['25%']) }}</div>
-        <div :class="backgroundColor">{{ formatNumber(school_gpa['50%']) }}</div>
-        <div>{{ formatNumber(school_gpa['75%']) }}</div>
-        <div>{{ formatNumber(school_gpa.max) }}</div>
+        <div>{{ formatNumber(schoolGpa.min) }}</div>
+        <div>{{ formatNumber(schoolGpa['25%']) }}</div>
+        <div :class="backgroundColor">{{ formatNumber(schoolGpa['50%']) }}</div>
+        <div>{{ formatNumber(schoolGpa['75%']) }}</div>
+        <div>{{ formatNumber(schoolGpa.max) }}</div>
       </div>
     </td>
 </template>
@@ -24,23 +24,23 @@
 export default {
     name: "GPA",
     props: {
-        athlete_gpa: {
+        athleteGpa: {
             type: Number,
         },
-        school_gpa: {
+        schoolGpa: {
             type: Object,
         },
     },
     computed: {
         backgroundColor: function () {
-            if (this.school_gpa['50%'] > this.athlete_gpa) {
-                return Math.abs(this.school_gpa['50%'] - this.athlete_gpa) > 0.10 ? "bg-gpa-above-more" : "bg-gpa-above-less"
+            if (this.schoolGpa['50%'] > this.athleteGpa) {
+                return Math.abs(this.schoolGpa['50%'] - this.athleteGpa) > 0.10 ? "bg-gpa-above-more" : "bg-gpa-above-less"
             }
-            if (this.school_gpa['50%'] === this.athlete_gpa) {
+            if (this.schoolGpa['50%'] === this.athleteGpa) {
                 return "bg-gpa-equal"
             }
-            if (this.school_gpa['50%'] < this.athlete_gpa) {
-                return Math.abs(this.school_gpa['50%'] - this.athlete_gpa) > 0.10 ? "bg-gpa-below-more" : "bg-gpa-below-less"
+            if (this.schoolGpa['50%'] < this.athleteGpa) {
+                return Math.abs(this.schoolGpa['50%'] - this.athleteGpa) > 0.10 ? "bg-gpa-below-more" : "bg-gpa-below-less"
             }
             return ""
         }
@@ -52,9 +52,3 @@ export default {
     },
 };
 </script>
-
-<style>
-.grid {
-    background-position-x: center;
-}
-</style>

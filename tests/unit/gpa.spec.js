@@ -12,7 +12,7 @@ describe('GPA.vue', () => {
       "max": 4.0
     }
     const { getByText } = render(GPA, {
-      props: { athlete_gpa: athleteGpa, school_gpa: schoolGpa }
+      props: { athleteGpa, schoolGpa }
     })
     getByText("2.70")
     getByText("3.28")

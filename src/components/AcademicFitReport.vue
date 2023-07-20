@@ -82,7 +82,7 @@
           :key="school.name"
           :index="index"
           :school="school"
-          :athlete_gpa="athlete.gpa"
+          :athleteGpa="athlete.gpa"
           class="block md:text-xs my-2 mx-auto md:table-row even:bg-table-even"></TableRow>
       </tbody>
     </table>
